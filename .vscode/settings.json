@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.sql": "sql",
+        "wrong_credential.h": "c",
+        "home.h": "c"
+    }
+}

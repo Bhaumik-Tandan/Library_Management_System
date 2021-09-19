@@ -1,22 +1,21 @@
 #pragma once
 
-struct  subscriber_node
+subscriber_node* subscriber_exists(int borrower_number,char password[30])
 {
-    char name[30];
-    int borrower_number;
-    book_node *book[5];
-    char date[5][10];
-    int number;
-    struct  subscriber_node *n;
-}*head_subscriber;
+    subscriber_node *p=head_subscriber;
 
-typedef struct subscriber_node subscriber_node;
+    while(p && !(p->borrower_number==borrower_number && strcmp(p->password,password)==0))
+    p=p->n;
 
-void add_subscriber(char name[30],int borrower_number)//return 1 indicate data successfully inserted
+    return p;
+}
+
+void add_subscriber(char name[30],int borrower_number,char password[30])
 {
     subscriber_node *t=(subscriber_node*)malloc(sizeof(subscriber_node));
     strcpy(t->name,name);
     t->borrower_number=borrower_number;
+    strcpy(t->password,password);
     t->number=0;
     t->n=0;
 

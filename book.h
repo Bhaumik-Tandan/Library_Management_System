@@ -1,18 +1,6 @@
-#include<stdbool.h>
-#include<string.h>
-#include <stdlib.h>
 #pragma once
-struct  book_node
-{
-    char title[30];
-    int accession_number;
-    bool tag;
-    struct  book_node *n;
-}*head_book;
 
-typedef struct  book_node book_node;
-
-void add_book(char title[30],int accession_number)//return 1 indicate data successfully inserted
+void add_book(char title[30],int accession_number)
 {
     book_node *t=(book_node*)malloc(sizeof(book_node));
     strcpy(t->title,title);
