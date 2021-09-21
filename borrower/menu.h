@@ -23,7 +23,7 @@ void menu(subscriber_node* b)
 
     if(c==5)
     {
-        printf("\n 1)Login\n2)Go to home page\n3)Exit\n  Enter your choice: ");
+        printf("\n 1)Login\n 2)Go to home page\n 3)Exit\n   Enter your choice: ");
         scanf("%d",&c);
         if(c==1)
         return borrower();

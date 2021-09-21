@@ -1,5 +1,6 @@
 #pragma once
-void borrower()
+
+void add_borrower()
 {
     char n[30],*p;
     int bn;

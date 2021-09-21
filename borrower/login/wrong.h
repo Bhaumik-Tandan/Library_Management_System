@@ -13,9 +13,7 @@ void wrong()
     switch_wrong[0]=login;
 
     #include "../../add/borrower.h"
-    switch_wrong[1]=borrower;
-
+    switch_wrong[1]=add_borrower;
     switch_wrong[2]=home;
-
     switch_wrong[c-1]();
 }
