@@ -20,7 +20,7 @@ void login()
         }
 
         #include "wrong.h"
-        return wrong();
+        return wrong(bn);
     }
 
     #include "../menu.h"
