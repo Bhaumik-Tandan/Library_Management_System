@@ -19,7 +19,7 @@ void menu()
         return;
 
     switch_admin[0] = book;
-    switch_admin[1] = add_borrower;
+    switch_admin[1] = borrower;
     switch_admin[2] = disp_avail_book;
     switch_admin[3] = disp_borrower;
     switch_admin[4] = issued_book;
