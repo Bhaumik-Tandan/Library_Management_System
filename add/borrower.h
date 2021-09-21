@@ -9,7 +9,7 @@ void borrower()
     gets(n);
     printf("  Borrower number: ");
     scanf("%d",&bn);
-    gets(p);
-    p=getpass("  Password: ");
+    printf("  Password: ");
+    p=pad('*');
     add_subscriber(n,bn,p);
 }

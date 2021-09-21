@@ -6,7 +6,8 @@ void login()
     int bn;
     char *pas;
     scanf("%d",&bn);
-    pas=getpass("  Password: ");
+    printf("  Password: ");
+    pas=pad('*');
 
     subscriber_node* b=subscriber_exists(bn,pas);
 

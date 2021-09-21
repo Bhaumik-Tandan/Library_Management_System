@@ -2,8 +2,8 @@
 
 #include<stdbool.h>
 #include<string.h>
-#include <stdlib.h>
-#include <unistd.h>//for getpass
+#include <termios.h>
+#include <unistd.h>
 
 
 struct  book_node

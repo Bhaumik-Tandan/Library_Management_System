@@ -6,13 +6,13 @@ void login()
      #include "import_data.h"
 
     char file_username[30],file_password[30],un[30],*pas;
-
     get_cred(file_username,file_password);
     
     printf("\n Enter the login username: ");
     scanf("%s",un);
 
-    pas=getpass("  Enter the password: ");
+    printf("  Enter the Password: ");
+    pas=pad('*');
     
     if(strcmp(un,file_username)!=0 || strcmp(pas,file_password)!=0)
     {
